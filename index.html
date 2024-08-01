@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8aeab1f372.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="images/x-icon" href="images/user-tie-solid.svg">
+</head>
+<body>
+    <!-- header part -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Software Engineer & Full Stack web Developer</p>
+                <H1>Hi, I'm <span>Tejash</span> <br>Maurya From India.</H1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about us section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user3.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm Final-year B.Tech student of Information Technology, proficient in C, C++, Python, HTML, CSS, JavaScript, NodeJs and MongoDB.
+                        Fast learner of new technologies, with good communication skills. 
+                        Excels in coding, web development, and database management. Actively seeks opportunities for self-learning and stays updated with industry trends.
+                        A dedicated individual ready to contribute effectively in the IT field.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-link activate-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content activate-tab" id="skills">
+                            <ul>
+                                <li><span>C, C++</span><br>Coding & Data Structure and Algorithms</li>
+                                <li><span>Full Stack Development</span><br>HTML, CSS, JavaScript, NodeJs, MongoDB</li>
+                                <li><span>Python</span><br>Basic Knowledge of Python coding.</li>
+                                <li><span>SQL, Mysql, DBMS</span><br>Good Knowledge of this language</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>UI/UX Designing using Coursera</li>
+                                <li><span>2022-23</span><br>Web Development training fro Allsoft Technology</li>
+                                <li><span>2021-22</span><br>Python training from United Globle infoservice PVT. LTD</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2017</span><br>High School from GD Memorial Children's Academy</li>
+                                <li><span>2019</span><br>Intermediate from mukuluranayam English School</li>
+                                <li><span>2020</span><br>Started Engineering from United College of Engineering and research</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere eius libero voluptates praesentium cumque fugit inventore distinctio dignissimos eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere eius libero voluptates praesentium cumque fugit inventore distinctio dignissimos eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h2>Google Cloud</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere eius libero voluptates praesentium cumque fugit inventore distinctio dignissimos eligendi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio area -->
+    <div id="Portfolio">
+        <div class="container">
+               <h1 class="sub-title">My Work</h1>
+               <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Weather website Using HTML,, CSS, JavaScript</h3>
+                        <p>This simple website give the Weather update.</p>
+                        <a href="https://github.com/MauryaTejash/Weather-App-using-JavaScript"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Blog Website</h3>
+                        <p>This website provides the different categories of blog post.</p>
+                        <a href="https://github.com/MauryaTejash/Blog-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Rock Paper Scissor game</h3>
+                        <p>Simple Rock Paper Scissor game and it has one extra feature of play with computer.</p>
+                        <a href="https://github.com/MauryaTejash/Rock-Paper-Scissor-Game-using-JavaScript-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               </div> 
+               <button class="btn"><a href="https://github.com/MauryaTejash?tab=repositories">See more</a></button>
+        </div>
+    </div>
+
+    <!-- contact us area -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mauryatejash00@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8736950487</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/tejash-maurya-a87a2b212/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MauryaTejash"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/its_mauryavanshii?igsh=MTAyd3c1bXEwdml0Nw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/tejash_maurya?t=HektGi017vhCO34JFA8E_w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="8" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Tejash. Made with <i class="fa-solid fa-heart"></i> By Tejash Maurya</p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
